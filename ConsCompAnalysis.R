@@ -21,8 +21,12 @@ setwd("~/DATA-332/Project1")
 #get_sentiments("bing")
 #get_sentiments("nrc")
 
+#GO TO THE LINK BELOW AND DOWNLOAD THE DATA, IT IS TOO BIG FOR GITHUB
+#>>>>    https://www.kaggle.com/datasets/ashwinik/consumer-complaints-financial-products    <<<<<#
 
-#reads in the data then turns it into rds so it can run quicker
+
+#reads in the data then turns it into rds so it can run quicker, uncomment first two lines if first 
+#time running, then comment out again 
 #consumerComplaintsData <- read.csv("Consumer_Complaints.csv")
 #saveRDS(consumerComplaintsData, "consumerComplaintsData.rds")
 consCompData <- read_rds("consumerComplaintsData.rds")
@@ -55,8 +59,8 @@ prod <- temp_cc_data %>%
 
 ggplot(prod, aes(x = reorder(Product, -n), y = n)) + 
   geom_bar(stat = "identity", fill = "lavender", color = "black") + 
-  scale_x_discrete(name = "Company") + 
-  theme(axis.text.x = element_text(size = 7, angle = 35)) +
+  scale_x_discrete(name = "Product") + 
+  theme(axis.text.x = element_text(size = 8, angle = 35)) +
   labs(x = "Products", y = "Count", title = "Complaints Per Product") 
 
 
@@ -114,7 +118,6 @@ topFourSentimentsProd <- tidy_comp %>%
   pivot_wider(names_from = sentiment, values_from = n, values_fill = 0) %>%
   mutate(sentiment = positive - negative) 
   
-
 ggplot(topFourSentimentsProd, aes(index, sentiment, fill = Product)) +
   geom_col(show.legend = FALSE) +
   scale_x_discrete(breaks = month_year[c(1, 12, 24, 36, 48, 60)]) +
@@ -129,9 +132,9 @@ tidy_comp %>%
   count(word) %>%
   with(wordcloud(word, n, max.words = 100))
 
-#Experian
+#Wells Fargo
 tidy_comp %>%
-  filter(Company == "Equifax") %>%
+  filter(Company == "Wells Fargo & Company") %>%
   count(word) %>%
   with(wordcloud(word, n, max.words = 100))
 
@@ -143,7 +146,6 @@ tidy_comp %>%
 #  acast(word ~ sentiment, value.var = "n", fill = 0) %>%
 #  comparison.cloud(colors = c("gray20", "gray80"))
   
-
 
 #dynamic choose which company to see which words contribute to its sentiment
   #Can choose multiple companies for one graph
@@ -192,6 +194,5 @@ server <- function(input, output) {
 }
 
 shinyApp(ui=ui, server=server)
-
 
 
