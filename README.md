@@ -1,8 +1,8 @@
 # Project1 - Sentiment Analysis
 
-## Description
+## Description  
 
-In this project, we took on a two data sets that contained information/data about ladybugs and run an analysis on them. One of that is the raw data of everything for ladybugs (Scan Ladybug Data.csv) while the other is a more summarized version with other variables of data (Ladybug Data.xlsx). We looked at the data (found points of interest that we wanted to analyze) and made questions to answer about the data. This then included cleaning the data into one working data frame. We would then use this dataframe and run analysis tools to answer the questions with dataframes that have key values to make visuals. Every question was successfully answered.  
+In this project, I was given a dataset of consumer complaints from various different companies, Wells Fargo, Capital One, and Equifax for example. The data set included the issue, date recevied, company, product, etc. I wrote an R script program that cleans and analyzes the data using sentiment analysis. I chose specific companies to focus on, a specific word (anger) to use, and also some comaprisons between companies to understand more about the consumer complaints dataset. I am hosting a shiny app that is comparing the specifc words and their sentiment contribution dynamically by allowing the user to choose which comapnies to anlayze, the link is provided right here ->  
 
 ### Dependencies
 
@@ -10,7 +10,7 @@ In this project, we took on a two data sets that contained information/data abou
 
 ### Installing
 
-* Download all the files from github and make sure it is all in one file.
+* Download all the files from github, link provided in the rscript and make sure it is all in one file.
 
 ### Executing program
 
@@ -18,6 +18,7 @@ In this project, we took on a two data sets that contained information/data abou
 * Click "Open an existing project"
 * Select the ConsCompAnalysis.R
 * Set the working directory in the beginning of the code
+* Read through the program quickly
 * Run the program
 
 ## Help
@@ -26,7 +27,7 @@ Make sure to set working directory properly and have the necessary libraries ins
 
 ## Authors
 
-Lina Maatouk & Kacper Cebula
+Kacper Cebula
 
 ## Version History
 
