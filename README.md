@@ -51,10 +51,17 @@ This gave me a workable tidy dataset to run sentiment analysis on.
 
 ![CompPerProd](https://user-images.githubusercontent.com/113058755/223002544-942a0983-b38b-431a-8323-de64c39c11e8.png)
 
-* This is a simple way of briefly showing what the data in the raw dataset is showing
+* This is a simple way of briefly showing what the data in the raw dataset is showing.
+* As you can see, COMPANY & Mortgage had the most complaints in terms of comapny and product respectively. 
 * I used count of the amount of "Company" there were since the raw dataset was necessarily already clean. 
 
-2. 
+2. A graph displaying the most common words that had the sentiment of "anger"
+
+![CommAngerWords](https://user-images.githubusercontent.com/113058755/223002865-3555126b-4e57-4dc3-9930-7bffde0006cf.png)
+
+* This allows us to see which weres words used in the complaints issue area
+* 
+
 
 ## Help
 
