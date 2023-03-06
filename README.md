@@ -2,7 +2,7 @@
 
 ## Description & Overview
 
-In this project, I was given a dataset of consumer complaints from various different companies, Wells Fargo, Capital One, and Equifax for example. The data set included the issue, date recevied, company, product, etc. I wrote an R script program that cleans and analyzes the data using sentiment analysis. I chose specific companies to focus on, a specific word (anger) to use, and also some comaprisons between companies to understand more about the consumer complaints dataset. Also, in the ConsCompAnalysis, there is local code for a shiny app, however, I am also hosting the same shiny app that is comparing the specifc words and their sentiment contribution dynamically by allowing the user to choose which comapnies to anlayze, the link is provided right here ->  
+In this project, I was given a dataset of consumer complaints from various different companies, Wells Fargo, Capital One, and Equifax for example. The data set included the issue, date recevied, company, product, etc. I wrote an R script program that cleans and analyzes the data using sentiment analysis. I chose specific companies to focus on, a specific word (anger) to use, and also some comaprisons between companies to understand more about the consumer complaints dataset. Also, in the ConsCompAnalysis, there is local code for a shiny app, however, I am also hosting the same shiny app that is comparing the specifc words and their sentiment contribution dynamically by allowing the user to choose which comapnies to anlayze, the link is provided right here -> https://kacpercebula.shinyapps.io/Project1/  
 
 ### Dependencies
 
