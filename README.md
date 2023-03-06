@@ -7,7 +7,7 @@ In this project, I was given a dataset of consumer complaints from various diffe
 ### Dependencies
 
 * RStudio with readxl, dplyr, ggplot2, tidytext, textdata, stringr, tidyr, wordcloud, sentimentr, reshape2, readr, shiny, DT, and lubridate libraries installed.
-* Downloading the Dataset from this link providec ->  https://www.kaggle.com/datasets/ashwinik/consumer-complaints-financial-products
+* Download the Dataset from this link providec ->  https://www.kaggle.com/datasets/ashwinik/consumer-complaints-financial-products
 
 ### Installing
 
