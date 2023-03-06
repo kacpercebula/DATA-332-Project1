@@ -23,7 +23,7 @@ In this project, I was given a dataset of consumer complaints from various diffe
 
 ## Data Cleaning & Preparing
 
-Cleaning was necessarly very easy and simple. To put it simply, first I selected columns out of the raw dataset that I wanted to analyze, then run this code... 
+Cleaning was necessarly very easy and simple. To put it simply, first I selected columns out of the raw dataset that I wanted to analyze (easy enough using dplyr select), then ran this code... 
 ```r
 tidy_comp <- temp_cc_data %>%
   select(Issue, Company, Product, Date.received, State) %>%
@@ -33,7 +33,7 @@ tidy_comp <- temp_cc_data %>%
   mutate(Date.received = as.Date(Date.received, format = "%m/%d/%Y")) 
 tidy_comp$Date.received <- format(tidy_comp$Date.received, "%Y-%m")
 ```
-I did clean up the date since it wasn't in the format I needed.
+At the end of that piece of code you can see I did clean up the date since it wasn't in the format I needed.
 
 
 ## Analysis
