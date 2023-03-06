@@ -34,6 +34,7 @@ tidy_comp <- temp_cc_data %>%
 tidy_comp$Date.received <- format(tidy_comp$Date.received, "%Y-%m")
 ```
 At the end of that piece of code you can see I did clean up the date since it wasn't in the format I needed.
+This gave me a workable tidy dataset to run sentiment analysis on.
 
 
 ## Analysis
