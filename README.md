@@ -39,6 +39,7 @@ This gave me a workable tidy dataset to run sentiment analysis on.
 ## Data Summary
 
 <img width="532" alt="Screen Shot 2023-03-05 at 7 38 32 PM" src="https://user-images.githubusercontent.com/113058755/223001993-aa0335b0-4afa-4436-84cd-f3414114ebcf.png">
+* Here you can see the dataset I was working with to run analysis on. 
 
 ## Analysis
 
