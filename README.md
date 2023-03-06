@@ -7,7 +7,7 @@ In this project, I was given a dataset of consumer complaints from various diffe
 ### Dependencies
 
 * RStudio with readxl, dplyr, ggplot2, tidytext, textdata, stringr, tidyr, wordcloud, sentimentr, reshape2, readr, shiny, DT, and lubridate libraries installed.
-* Download the Dataset from this link providec ->  https://www.kaggle.com/datasets/ashwinik/consumer-complaints-financial-products
+* Download the Dataset from this link provided ->  https://www.kaggle.com/datasets/ashwinik/consumer-complaints-financial-products
 
 ### Installing
 
@@ -53,15 +53,15 @@ This gave me a workable tidy dataset to run sentiment analysis on.
 ![CompPerProd](https://user-images.githubusercontent.com/113058755/223002544-942a0983-b38b-431a-8323-de64c39c11e8.png)
 
 * This is a simple way of briefly showing what the data in the raw dataset is showing.
-* As you can see, Bank of America & Mortgage had the most complaints in terms of comapny and product respectively. 
-* I used count of the amount of "Company" there were since the raw dataset was necessarily already clean. 
+* As you can see, Bank of America & Mortgage had the most complaints in terms of company and product respectively. 
+* I used count of the amount of "Company" & "Product" there were since the raw dataset was necessarily already clean. 
 
 2. A graph displaying the most common words that had the sentiment of "anger"
 
 ![CommAngerWords](https://user-images.githubusercontent.com/113058755/223002865-3555126b-4e57-4dc3-9930-7bffde0006cf.png)
 
 * This allows us to see which weres words used in the complaints issue area
-* As you can see, fraud, illegal, and threatening were the msot common words that had the sentiment "anger assigned to them. 
+* As you can see, fraud, illegal, and threatening were the most common words that had the sentiment "anger" assigned to them. 
 * I used the nrc lexicons and count to achieve this.
 
 3. A graph showing comparisons between top companies sentiment totals overtime
@@ -69,12 +69,10 @@ This gave me a workable tidy dataset to run sentiment analysis on.
 ![TopSixCompSent](https://user-images.githubusercontent.com/113058755/223017824-0d49583e-d882-46d9-b5f3-3d34472e4e12.png)
 
 * The top six companies were chosen to see what their sentiments were overtime. As we can see, Bank of America, Citibank, JPMorgan Chase & Co., and Wells Fargo & Company all have similar sentiment totals that aren't relatively drastic and do not change overtime. Now on the other hand, Equifax and Experian sentiment totals are drastic and increase over time, although, Experian doesn't increase as much. 
-* This shows use that certain companies may have more complaints, such as Bank of America (number one most complaints), but the compalaints aren't as intense./ 
-* I achieved this by filtering the top companies, using/inner joining the bing lexicon, and then mutating the dataframe.
+* This shows us that certain companies may have more complaints, such as Bank of America (number one most complaints), but the compalaints aren't as intense or drastic like Equifax.
+* I achieved this by filtering the top companies, using inner-join for the bing lexicon, and then mutating the dataframe.
 
-insert graph
-
-4. A graph showing comparisons between the top porducts sentiment totals overtime. 
+4. A graph showing comparisons between the top products sentiment totals overtime. 
 
 ![TopFourProdSent](https://user-images.githubusercontent.com/113058755/223021915-4234065e-4727-47b7-ba7c-f5701d7c3f39.png)
 
