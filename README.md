@@ -51,7 +51,10 @@ This gave me a workable tidy dataset to run sentiment analysis on.
 
 ![CompPerProd](https://user-images.githubusercontent.com/113058755/223002544-942a0983-b38b-431a-8323-de64c39c11e8.png)
 
-*
+* This is a simple way of briefly showing what the data in the raw dataset is showing
+* I used count of the amount of "Company" there were since the raw dataset was necessarily already clean. 
+
+2. 
 
 ## Help
 
