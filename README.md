@@ -60,7 +60,10 @@ This gave me a workable tidy dataset to run sentiment analysis on.
 ![CommAngerWords](https://user-images.githubusercontent.com/113058755/223002865-3555126b-4e57-4dc3-9930-7bffde0006cf.png)
 
 * This allows us to see which weres words used in the complaints issue area
-* 
+* As you can see, fraud, illegal, and threatening were the msot common words that had the sentiment "anger assigned to them. 
+* I used the nrc lexicons and count to achieve this.
+
+3. 
 
 
 ## Help
