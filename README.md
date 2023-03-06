@@ -41,9 +41,17 @@ This gave me a workable tidy dataset to run sentiment analysis on.
 <img width="532" alt="Screen Shot 2023-03-05 at 7 38 32 PM" src="https://user-images.githubusercontent.com/113058755/223001993-aa0335b0-4afa-4436-84cd-f3414114ebcf.png">
 
 * Here you can see the dataset I was working with to run analysis on. 
+* It was grouped by Company from Z-A.
 
 ## Analysis
 
+1. Simple graphs to show the amount of compaints per company and product. 
+
+![Top20Comp](https://user-images.githubusercontent.com/113058755/223002525-054893d9-fce8-4dde-ba3b-e2ecc8e1bee9.png)
+
+![CompPerProd](https://user-images.githubusercontent.com/113058755/223002544-942a0983-b38b-431a-8323-de64c39c11e8.png)
+
+*
 
 ## Help
 
