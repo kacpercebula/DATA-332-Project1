@@ -36,6 +36,9 @@ tidy_comp$Date.received <- format(tidy_comp$Date.received, "%Y-%m")
 At the end of that piece of code you can see I did clean up the date since it wasn't in the format I needed.
 This gave me a workable tidy dataset to run sentiment analysis on.
 
+## Data Summary
+
+<img width="532" alt="Screen Shot 2023-03-05 at 7 38 32 PM" src="https://user-images.githubusercontent.com/113058755/223001993-aa0335b0-4afa-4436-84cd-f3414114ebcf.png">
 
 ## Analysis
 
