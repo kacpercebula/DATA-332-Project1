@@ -2,7 +2,7 @@
 
 ## Description & Overview
 
-In this project, I was given a dataset of consumer complaints from various different companies, Wells Fargo, Capital One, and Equifax for example. The data set included the issue, date recevied, company, product, etc. I wrote an R script program that cleans and analyzes the data using sentiment analysis. I chose specific companies to focus on, a specific word (anger) to use, and also some comparisons between companies to understand more about the consumer complaints dataset. Worth noting is that I used the Issues within the data set to run analysis on. I did not use Sub.Issues or Consumer.complaint.narrative. Also, in the ConsCompAnalysis, there is local code for a shiny app, however, I am also hosting the same shiny app that is comparing the specifc words and their sentiment contribution dynamically by allowing the user to choose which comapnies to anlayze, the link is provided right here -> https://kacpercebula.shinyapps.io/Project1-v2/  
+In this project, I was given a dataset of consumer complaints from various different companies, Wells Fargo, Capital One, and Equifax for example. The data set included the issue, date recevied, company, product, etc. I wrote an R script program that cleans and analyzes the data using sentiment analysis. I chose specific companies to focus on, a specific word (anger) to use, and also some comparisons between companies to understand more about the consumer complaints dataset. Worth noting is that I used the Issues within the data set to run analysis on. I did not use Sub.Issues or Consumer.complaint.narrative. Also, in the ConsCompAnalysis, there is local code for a shiny app, however, I am also hosting the same shiny app that is comparing the specifc words and their sentiment contribution dynamically by allowing the user to choose which comapnies to anlayze, the link is provided right here -> https://kacpercebula.shinyapps.io/Project1_v2/  
 
 ### Dependencies
 
@@ -90,7 +90,7 @@ This gave me a workable tidy dataset to run sentiment analysis on.
 * This shows how each company, even though they have complaints, have specific issues they work with and have many complaints about. 
 * I achieved this by using the wordcloud library with a few lines of code. 
 
-6. This is a screenshot of the running shiny app you can view using this link -> https://kacpercebula.shinyapps.io/Project1-v2/.  
+6. This is a screenshot of the running shiny app you can view using this link -> https://kacpercebula.shinyapps.io/Project1_v2/.  
 
 <img width="1422" alt="Screen Shot 2023-03-05 at 10 55 46 PM" src="https://user-images.githubusercontent.com/113058755/223022591-1d05858e-aa8f-422b-b9c5-ecec15ee72e2.png">
 
