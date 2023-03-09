@@ -12,20 +12,7 @@ library(shiny)
 library(DT)
 library(lubridate)
 
-consCompData <- read_rds("consumerComplaintsData.rds") %>%
-  dplyr::select(Issue, Company) %>%
-  arrange(desc(Company)) %>%
-  ungroup() %>%
-  unnest_tokens(word, Issue)
-
-dataset <- consCompData %>%
-  inner_join(get_sentiments("bing")) %>%
-  group_by(Company) %>%
-  count(word, sentiment, sort = TRUE) %>%
-  ungroup()
-
-column_names <- colnames(dataset)[-1]
-
+dataset <- read_rds("dataset.rds") 
 
 ui <- fluidPage (
   
@@ -34,7 +21,7 @@ ui <- fluidPage (
   
   fluidRow(
     column(2,
-           selectizeInput('company', 'Choose Companies', choices = unique(dataset$Company), multiple = TRUE)
+           selectizeInput('company', 'Choose Companies', choices = unique(dataset$Company))
     ),
     column(4,plotOutput('plot_01')),
     column(6,DT::dataTableOutput("table_01", width = "100%"))
