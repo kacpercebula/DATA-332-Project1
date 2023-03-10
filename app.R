@@ -21,7 +21,7 @@ ui <- fluidPage (
   
   fluidRow(
     column(2,
-           selectizeInput('company', 'Choose Companies', choices = unique(dataset$Company))
+           selectInput('company', 'Choose Companies', choices = unique(dataset$Company))
     ),
     column(4,plotOutput('plot_01')),
     column(6,DT::dataTableOutput("table_01", width = "100%"))
